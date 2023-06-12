@@ -1,5 +1,4 @@
 import path from 'path';
-import { constants } from 'node:fs';
 import * as url from 'url';
 import * as fsPromises from 'node:fs/promises';
 
