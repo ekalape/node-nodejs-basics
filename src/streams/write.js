@@ -1,7 +1,7 @@
 import path from 'path';
 import * as url from 'url';
-import { stdin, stdout, exit } from 'node:process';
-import { createReadStream, createWriteStream } from 'fs';
+import { stdin } from 'node:process';
+import { createWriteStream } from 'fs';
 
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
