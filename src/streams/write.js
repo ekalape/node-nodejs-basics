@@ -13,6 +13,10 @@ const write = async () => {
     const stream = createWriteStream(currentPath, { encoding: 'utf-8' });
     console.log('Write smth (ctrl+C to stop): ');
     stdin.pipe(stream);
+    process.on('SIGINT', () => {
+      console.log('Your text is saved to the file. Thank you!');
+      process.exit();
+    });
   } catch (err) {
     console.log(err);
   }
